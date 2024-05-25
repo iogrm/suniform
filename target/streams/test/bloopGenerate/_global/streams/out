@@ -1,0 +1,4 @@
+[debug] [suniform-test] Classpath dependencies List()
+[debug] [suniform-test] Dependencies from configurations List(suniform)
+[debug] Bloop wrote the configuration of project 'suniform-test' to '/Users/amirmohammadmehri/Documents/project/suniform/.bloop/suniform-test.json'
+[success] Generated .bloop/suniform-test.json

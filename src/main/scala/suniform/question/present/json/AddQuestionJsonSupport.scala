@@ -11,14 +11,13 @@ import suniform.question.present.json.QuestionIdJsonSupport
 object AddQuestionJsonSupport {
 
   import QuestionIdJsonSupport.formatQuestionId
+  import suniform.mbti.MbtiJsonSupport.TraitJsonSupport
 
   implicit val paramHandler: RootJsonFormat[AddQuestion.Param] =
     jsonFormat3(AddQuestion.Param)
 
   implicit val resultHandler: RootJsonFormat[AddQuestion.Result] =
-    jsonFormat1(
-      AddQuestion.Result
-    )
+    jsonFormat1(AddQuestion.Result)
 
   object ErrorSupport {
     private object Formats {

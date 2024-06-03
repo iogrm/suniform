@@ -17,6 +17,7 @@ import suniform.question.present.json.{
   AddQuestionJsonSupport
 }
 import suniform.question.present.AddQuestion
+import suniform.question.model.QuestionId
 
 class Router(service: Service) {
 
@@ -26,7 +27,7 @@ class Router(service: Service) {
 
   private val oneApiRoute: Route = pathPrefix("api" / "question" / "one") {
     path(RemainingPath) { case (id) =>
-      complete(service.getQuestion(id.toString()))
+      complete(service.getQuestion(QuestionId(id.toString())))
     }
   }
 

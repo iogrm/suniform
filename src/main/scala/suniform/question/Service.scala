@@ -7,6 +7,7 @@ import scala.concurrent.{ExecutionContext, Future}
 import java.util.UUID
 import scala.util.{Success, Failure}
 import suniform.question.present.{AddQuestion, GetQuestion}
+import suniform.mbti.Trait
 
 class Service(repo: Repo) {
 
@@ -18,8 +19,8 @@ class Service(repo: Repo) {
       Question(
         _id = QuestionId(randomId),
         text = param.text,
-        agree = param.agree,
-        disagree = param.disagree
+        agree = Trait.toString(param.agree),
+        disagree = Trait.toString(param.disagree)
       )
 
     for {
@@ -28,7 +29,7 @@ class Service(repo: Repo) {
 
   }
 
-  def getQuestion(questionId: String)(implicit
+  def getQuestion(questionId: QuestionId)(implicit
       ec: ExecutionContext
   ): Future[GetQuestion.Result] = {
     repo

@@ -212,7 +212,7 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "/usr/local/Cellar/openjdk/21.0.3/libexec/openjdk.jdk/Contents/Home",
+                "home": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/amirmohammadmehri/Documents/project/suniform/project"
                 ]
@@ -221,7 +221,7 @@
                 
             ],
             "runtimeConfig": {
-                "home": "/usr/local/Cellar/openjdk/21.0.3/libexec/openjdk.jdk/Contents/Home",
+                "home": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
                 "options": [
                     "-Duser.dir=/Users/amirmohammadmehri/Documents/project/suniform/project"
                 ]
